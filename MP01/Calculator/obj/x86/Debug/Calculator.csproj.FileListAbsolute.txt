@@ -1,0 +1,4 @@
+D:\Aula\aula.csharp.miniproject01\MP01\Calculator\bin\Debug\Calculator.exe
+D:\Aula\aula.csharp.miniproject01\MP01\Calculator\bin\Debug\Calculator.pdb
+D:\Aula\aula.csharp.miniproject01\MP01\Calculator\obj\x86\Debug\Calculator.exe
+D:\Aula\aula.csharp.miniproject01\MP01\Calculator\obj\x86\Debug\Calculator.pdb
