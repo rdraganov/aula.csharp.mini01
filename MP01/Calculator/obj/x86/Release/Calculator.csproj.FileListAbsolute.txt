@@ -1,0 +1,7 @@
+D:\Aula\aula.csharp.miniproject01\MP01\Calculator\bin\Release\Calculator.exe
+D:\Aula\aula.csharp.miniproject01\MP01\Calculator\bin\Release\Calculator.pdb
+D:\Aula\aula.csharp.miniproject01\MP01\Calculator\bin\Release\UserInput.dll
+D:\Aula\aula.csharp.miniproject01\MP01\Calculator\bin\Release\UserInput.pdb
+D:\Aula\aula.csharp.miniproject01\MP01\Calculator\obj\x86\Release\Calculator.csprojResolveAssemblyReference.cache
+D:\Aula\aula.csharp.miniproject01\MP01\Calculator\obj\x86\Release\Calculator.exe
+D:\Aula\aula.csharp.miniproject01\MP01\Calculator\obj\x86\Release\Calculator.pdb
