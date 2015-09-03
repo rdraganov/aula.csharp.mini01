@@ -2,8 +2,11 @@
 
 namespace Calculations
 {
+	//Библиотеки
+
 	public class Formula01
 	{
+		private Colors.ForCLI _c = new Colors.ForCLI();
 		public Formula01 () //Формула за обикновена строиелна яма
 		{
 		}
@@ -17,6 +20,8 @@ namespace Calculations
 				if (param.Length>1 && _userInput.Contains("-п"))
 				{
 					//Помощ
+					help();
+
 				}
 				if (param.Length>1 && !_userInput.Contains("-п"))
 				{
@@ -24,10 +29,11 @@ namespace Calculations
 					double _result=0;
 					if (runCalculations(param,out _result))
 					{
-						Console.Write("Обемът на строителната яма е: ");
-						Console.WriteLine(_result.ToString("N2"));
+						_c.Default(); Console.Write("Обемът на строителната яма е: ");
+						_c.Result(); Console.Write(_result.ToString("N2"));
+						_c.Default(); Console.WriteLine(" м3\n");
 					}else{
-						Console.WriteLine("Има грешно въведени параметри. Можете да проверите синтаксиса с параметъра '-п'");
+						_c.Default(); Console.WriteLine("Има грешно въведени параметри. Можете да проверите синтаксиса с параметъра '-п'\n");
 					}
 				}
 
@@ -60,6 +66,24 @@ namespace Calculations
 		}
 
 		//Помощ за командата
+
+		private void help ()
+		{
+			_c.Result(); Console.Write("[яма]");
+			_c.Default(); Console.WriteLine(" - команда за пресмятане обем на строителна яма");
+
+			_c.Command(); Console.Write("параметри: ");
+			_c.Default(); Console.WriteLine(" a1 a2 b1 b2 h\n");
+
+			_c.Command(); Console.Write("a1 b1:");
+			_c.Default(); Console.WriteLine(" - ширина и дължина на горната страна на изкопа");
+
+			_c.Command(); Console.Write("a2 b2: ");
+			_c.Default(); Console.WriteLine(" - ширина и дължина на долната страна на изкопа");
+
+			_c.Command(); Console.Write("h: ");
+			_c.Default(); Console.WriteLine(" - височина на изкопа\n");
+		}
 	}
 }
 

@@ -34,6 +34,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Calculations.cs" />
     <Compile Include="Formula01.cs" />
+    <Compile Include="Formula02.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Colors\Colors.csproj">
+      <Project>{0D017861-4335-4AAA-A558-8DE0E1E25B2A}</Project>
+      <Name>Colors</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

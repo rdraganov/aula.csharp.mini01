@@ -1,0 +1,4 @@
+D:\Aula\aula.csharp.miniproject01\MP01\About\bin\Release\About.dll
+D:\Aula\aula.csharp.miniproject01\MP01\About\bin\Release\About.pdb
+D:\Aula\aula.csharp.miniproject01\MP01\About\obj\Release\About.dll
+D:\Aula\aula.csharp.miniproject01\MP01\About\obj\Release\About.pdb
