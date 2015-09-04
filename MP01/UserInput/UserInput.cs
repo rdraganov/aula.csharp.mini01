@@ -33,13 +33,21 @@ namespace UserInput
 
 				if (_command.ToLower().Contains("въгъл")) 	_calc.F02.calc(_command);
 
-				if (_command.ToLower().Contains("команда3")) 
+				if (_command.ToLower().Contains("иъгъл")) 	_calc.F03.calc(_command);
+
+				if (_command.ToLower().Contains("помощ")||
+					_command.ToLower() == "-п") 	_calc.commands();
+
+
+				if (_command.ToLower().Contains("изчисти")||
+					_command.ToLower() == "-и") 	
 				{
-					_c.Default(); Console.Write("Стартирана е ");
-					_c.Result(); Console.WriteLine("Команда 3\n");
-				}	
+					Console.Clear();
+					_c.Default();
+					sayHello();
+				}
 
-
+			
 			}while(_command.ToLower() != "изход");
 		}
 
