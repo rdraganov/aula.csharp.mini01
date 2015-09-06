@@ -5,16 +5,19 @@ namespace Calculations
 	//Библиотеки
 
 	/// <summary>
-	/// Клас за формула за обем на строителна яма (Формула 1)
-	/// </summary>
+	/// Клас за формула за обем на строителна яма (Формула 1) </summary>
 	public class Formula01
 	{
 		private Colors.ForCLI _c = new Colors.ForCLI();
 		public Formula01 () //Формула за обикновена строиелна яма
 		{
+			
 		}
 
-		//Парсване
+		/// <summary>
+		/// Метод за изчисляване на Формула 01
+		/// </summary>
+		/// <param name="_userInput">Входна команда от потребителя.</param>
 		public void calc(string _userInput)
 		{
 			try{
@@ -45,7 +48,12 @@ namespace Calculations
 			}
 		}
 
-		//Изчисление и изписване
+		/// <summary>
+		/// Вътрешна команда за изчисление след парсване
+		/// </summary>
+		/// <returns><c>true</c>, if calculations was run, <c>false</c> otherwise.</returns>
+		/// <param name="param">Масив с елементите на командата от потребителя.</param>
+		/// <param name="_result">Резултат при успешно изпълнение.</param>
 		private bool runCalculations(string[] param, out double _result)
 		{
 			try{
@@ -67,8 +75,8 @@ namespace Calculations
 			_result=0;
 			return false;
 		}
-
-		//Помощ за командата
+		///<summary>
+		///Помощ за командата </summary>
 
 		private void help ()
 		{

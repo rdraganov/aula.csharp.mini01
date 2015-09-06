@@ -2,12 +2,20 @@
 
 namespace Calculations
 {
+	/// <summary>
+	/// Клас за изчисление на Formula05.
+	/// </summary>
 	public class Formula05
 	{
 		private Colors.ForCLI _c = new Colors.ForCLI();
 		public Formula05 ()
 		{
 		}
+
+		/// <summary>
+		/// Метод за изчисляване на Formula05
+		/// </summary>
+		/// <param name="_userInput">Входна команда от потребителя</param>
 		public void calc(string _userInput)
 		{
 			try{
@@ -25,7 +33,7 @@ namespace Calculations
 					double _result=0;
 					if (runCalculations(param,out _result))
 					{
-						_c.Default(); Console.Write("Обемът на откоса е: ");
+						_c.Default(); Console.Write("Обемът на траншейния изкоп е: ");
 						_c.Result(); Console.Write(_result.ToString("N2"));
 						_c.Default(); Console.WriteLine(" м3\n");
 					}else{
@@ -38,7 +46,12 @@ namespace Calculations
 			}
 		}
 
-		//Изчисление и изписване
+	    /// <summary>
+	    /// Вътрешен метод за изчисление на Formula05
+	    /// </summary>
+	    /// <returns><c>true</c>, if calculations was run, <c>false</c> otherwise.</returns>
+	    /// <param name="param">Масив с елементите на потребителската команда.</param>
+	    /// <param name="_result">Резултат от изчисленията.</param>
 		private bool runCalculations(string[] param, out double _result)
 		{
 			try{
@@ -61,7 +74,9 @@ namespace Calculations
 			return false;
 		}
 
-		//Помощ за командата
+		/// <summary>
+		/// Помощ за командата
+		/// </summary>
 
 		private void help ()
 		{

@@ -2,6 +2,9 @@
 
 namespace Calculations
 {
+	/// <summary>
+	/// Клас за изчисление на Formula04.
+	/// </summary>
 	public class Formula04
 	{
 				
@@ -10,7 +13,10 @@ namespace Calculations
 		{
 		}
 
-		//Парсване
+		/// <summary>
+		/// Метод за изчисление на Formula 04
+		/// </summary>
+		/// <param name="_userInput">Входна команда от потребителя</param>
 		public void calc(string _userInput)
 		{
 			try{
@@ -41,7 +47,12 @@ namespace Calculations
 			}
 		}
 
-		//Изчисление и изписване
+		/// <summary>
+		/// Вътрешен метод за изчисление на Formula04
+		/// </summary>
+		/// <returns><c>true</c>, if calculations was run, <c>false</c> otherwise.</returns>
+		/// <param name="param">Масив с елементите на потребителската команда.</param>
+		/// <param name="_result">Резултат от изчисленията.</param>
 		private bool runCalculations(string[] param, out double _result)
 		{
 			try{
@@ -64,7 +75,9 @@ namespace Calculations
 			return false;
 		}
 
-		//Помощ за командата
+		/// <summary>
+		/// Помощ за командата
+		/// </summary>
 
 		private void help ()
 		{

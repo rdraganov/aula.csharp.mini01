@@ -42,9 +42,10 @@ namespace UserInput
 				if (_command.ToLower().Contains("помощ")||
 					_command.ToLower() == "-п") 	_calc.commands();
 
-
 				if (_command.ToLower().Contains("изчисти")||
-					_command.ToLower() == "-и") 	
+					_command.ToLower() == "-и") 
+
+				
 				{
 					Console.Clear();
 					_c.Default();
